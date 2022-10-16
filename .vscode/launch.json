@@ -6,8 +6,9 @@
               "program": "./target/debug/hello_world",
               "request": "launch",
               "name": "run hello world",
-              "args": ["arg1", "arg2"],
-              "environment": [{ "name": "config", "value": "Debug" }]
+              "env": {
+                "RUST_LOG": "info"
+              }
           }
       ]
   }
