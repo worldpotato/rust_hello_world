@@ -1,12 +1,16 @@
 #[macro_use]
 extern crate log;
 
-use std::env;
 use log::{debug, error, info, trace};
+use std::env;
 
+
+use crate::message::MessageStruct;
 use crate::speaker::*;
 
+// pub mod message;
 pub mod speaker;
+pub mod message;
 
 fn main() -> ! {
     env_logger::init();
@@ -23,7 +27,13 @@ fn main() -> ! {
     // let env = env::var("RUST_LOG").unwrap();
     println!("{env}");
 
-    let message = String::from("hello my world");
+    let message = MessageStruct {
+        greeting: String::from("Hello"),
+        message: String::from("World"),
+        closing: String::from("Cheers!")
+
+    };
+
     scream(&message);
     whisper(&message);
     std::process::exit(0)

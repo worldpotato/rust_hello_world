@@ -1,3 +1,5 @@
+use crate::message::MessageStruct;
+
 pub mod screamer;
 pub mod whisperer;
 
@@ -12,7 +14,7 @@ pub mod whisperer;
 /// let message = String::from("hello my world");
 /// let status = speaker_scream(&message);
 /// ```
-pub fn scream(message: &String) -> i32 {
+pub fn scream(message: &MessageStruct) -> i32 {
     trace!("scream in speaker");
     let ret_code = screamer::my_scream(message);
     return ret_code;
@@ -29,7 +31,7 @@ pub fn scream(message: &String) -> i32 {
 /// let message = String::from("hello my world");
 /// let status = speaker_whisper(&message);
 /// ```
-pub fn whisper(message: &String) -> i32 {
+pub fn whisper(message: &MessageStruct) -> i32 {
     trace!("whisper in speaker");
     let ret_code = whisperer::my_whisper(message);
     return ret_code;
