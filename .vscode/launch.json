@@ -6,9 +6,9 @@
               "program": "./target/debug/hello_world",
               "request": "launch",
               "name": "run hello world",
-              "env": {
+              "environ": [{
                 "RUST_LOG": "info"
-              }
+              }]
           }
       ]
   }
