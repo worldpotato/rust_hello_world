@@ -1,7 +1,7 @@
 use crate::message::MessageStruct;
 
-pub mod screamer;
-pub mod whisperer;
+mod screamer;
+mod whisperer;
 
 /// Print a crab to stdout that says something but in loud!
 /// Returns `0` if the printing was ok is [`Ok`].
