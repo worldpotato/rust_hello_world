@@ -16,7 +16,7 @@ mod whisperer;
 /// ```
 pub fn scream(message: &MessageStruct) -> i32 {
     trace!("scream in speaker");
-    let ret_code = screamer::my_scream(message);
+    let ret_code = screamer::scream(message);
     return ret_code;
 }
 
@@ -33,6 +33,6 @@ pub fn scream(message: &MessageStruct) -> i32 {
 /// ```
 pub fn whisper(message: &MessageStruct) -> i32 {
     trace!("whisper in speaker");
-    let ret_code = whisperer::my_whisper(message);
+    let ret_code = whisperer::whisper(message);
     return ret_code;
 }

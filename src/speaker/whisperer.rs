@@ -1,6 +1,6 @@
 use crate::message::MessageStruct;
 
-pub fn my_whisper(message: &MessageStruct) -> i32 {
+pub fn whisper(message: &MessageStruct) -> i32 {
 
     /*! Print the given string as a speack bubble of a crab */
     let temp_message = message.to_string();
@@ -15,3 +15,4 @@ pub fn my_whisper(message: &MessageStruct) -> i32 {
 
     return 0;
 }
+

@@ -1,6 +1,6 @@
 use crate::message::MessageStruct;
 
-pub fn my_scream(message: &MessageStruct) -> i32 {
+pub fn scream(message: &MessageStruct) -> i32 {
     /*! Print the given string as a speack bubble of a crab */
     trace!("my_scream");
     let temp_message = message.to_string();
@@ -14,3 +14,4 @@ pub fn my_scream(message: &MessageStruct) -> i32 {
 
     return 0;
 }
+
